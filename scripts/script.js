@@ -1,4 +1,11 @@
+var main = document.getElementById("main");
+var logs = document.getElementById("logs");
 var fullscreen_btn = document.getElementById("fullscreen_btn");
+
+function fill_logs()
+{
+	logs.innerHTML = main.clientWidth + " * " + main.clientHeight;
+}
 
 function toggle_fullscreen()
 {
@@ -18,9 +25,14 @@ function toggle_fullscreen()
 		requestFullScreen.call(doc_element);
 	else
 		cancelFullScreen.call(doc);
+	setTimeout(function()
+	{
+		fill_logs();
+	}, 1000);
 }
 
 window.addEventListener("load",function()
 {
 	fullscreen_btn.addEventListener("click", toggle_fullscreen, false);
+	fill_logs();
 } , false);
