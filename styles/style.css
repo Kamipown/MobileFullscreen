@@ -7,5 +7,5 @@ input { font-family: "Roboto";}
 h1, h2, h3, h4, h5, h6 { font-weight: 400;}
 a { text-decoration: none;}
 
-#main { display: flex; width: 100%; height: 100%; border: 3px solid #c55; background-color: #111;}
-	#fullscreen_btn { display: block; min-width: 200px; height: 40px; margin: auto; border: 1px solid #222; background-color: #333; color: #fff;}
+#main { display: block; width: 100%; height: 100%; border: 3px solid #c55; background-color: #111;}
+	#fullscreen_btn { display: block; min-width: 200px; height: 40px; margin: 20px auto; border: 1px solid #222; background-color: #333; color: #fff;}
